@@ -1,6 +1,6 @@
-# Workspace for Multi-Organ Nuclei Segmentation and Classification Challenge
+# Workspace for Accurate Automated Spinal Curvature Estimation Challenge
 
-Class project for KE5006, based on [MoNuSAC 2020](https://monusac-2020.grand-challenge.org/)
+Class project for KE5006, based on [AASCE 2019](https://aasce19.grand-challenge.org/Home/)
 
 Project Plan and Milestones:
 * 20/Jan/2020 -- Draft Project Proposal (This readme)
@@ -13,18 +13,14 @@ Project Plan and Milestones:
 
 
 ### 1. Background
-In this KE5006 class, I'd like to develop my research skills as well as machine learning coding skills by attending this real-world challenge MoNuSAC 2020. My initial plan is to get familiar with this challenge and learn how to find related existing research paper and code, then, understand the existing work. After all, come out novel idea and implement it to make better result out of it.
+Previously, in KE5108 module, I and my teammates studied and developed a MEAN U-Net based segmentation method to identify the vertebraes and calculate the final cobb angle of the spin. 
+In this KE5006 class, I'd like to develop my research skills as well as machine learning coding skills. My initial plan is to solve the problem we face by learning how to find related existing research paper. After all, come out novel idea and implement it to make better result out of it.
 
-### 2. MoNuSAC Introduction
-Different types of cells play a vital role in the initiation, development, invasion, metastasis and therapeutic response of tumors of various organs. So, accurate identification and segmentation of nuclei of multiple cell-types is important for AI enabled characterization of tumor and its microenvironment. [Read more ...](https://monusac-2020.grand-challenge.org/)
+### 2. AASCE 2019 Introduction
+Accurate automated quantitative estimation of spinal curvature is an important task for the clinical evaluation and treatment planning of Adolescent Idiopathic Scoliosis (AIS). It solves the disadvantage of manual Cobb angle measurement (time-consuming and unreliable) which is the current clinical standard for AIS assessment. A couple of attempts have been made for automated Cobb angle estimation on single-view x-rays. However, it is very challenging to achieve a highly accurate automated estimation of Cobb angles because it is difficult to utilize the information of x-rays efficiently.  [Read more ...](https://aasce19.grand-challenge.org/Home/)
 
 ### 3. Data Description & Exploration
-H&E staining of human tissue sections is a routine and most common protocol used by pathologists to enhance the contrast of tissue sections for tumor assessment (grading, staging, etc.) at multiple microscopic resolutions. 
+HThe training dataset consists of 609 spinal anterior-posterior x-ray images. The landmarks were provided by two professional doctors in London Health Sciences Center. Each vertebra was located by four landmarks with respect to four corners. The Cobb angles were calculated using these landmarks.
 
-Refer to notebook [Data Exploration](./nb01_eda.ipynb)
+Refer to [Data Explanation](https://aasce19.grand-challenge.org/Data/)
 
-### 4. Hypothese and Goal
-#### 1. Normalize images
-
-
-TBD
